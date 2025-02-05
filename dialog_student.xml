@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/StudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textSize="25dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter student name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/tvStudentEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Number"
+        android:textSize="25dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etStudentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter student Number"
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/tvProfilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Picture"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSelectPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Picture"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
